@@ -1,9 +1,17 @@
-import React from 'react'
+import { Hero } from "@/components/homepage/Hero";
+import { Features } from "@/components/homepage/Features";
+import { HowItWorks } from "@/components/homepage/HowItWorks";
+import { Testimonial } from "@/components/homepage/Testimonial";
+import { BottomCTA } from "@/components/homepage/BottomCTA";
 
-const Home = () => {
+export default function Home() {
   return (
-    <h1>JobHunt</h1>
-  )
+    <div className="flex flex-col w-full">
+      <Hero />
+      <HowItWorks />
+      <Features />
+      <Testimonial />
+      <BottomCTA />
+    </div>
+  );
 }
-
-export default Home
